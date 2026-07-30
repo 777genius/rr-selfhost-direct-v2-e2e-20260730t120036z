@@ -24,7 +24,7 @@ jobs:
       runtime_ref: "626739854b5c67d94b3f0118738c106b4a232c41"
       api_url: "https://cf48-46-166-42-92.ngrok-free.app"
       runtime_config_mode: oidc
-      pr_number: ${{ github.event.pull_request.number }}
+      pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
       provider_instance_id: "codex-rotating:1317220367"
       workflow_schema_version: 2
