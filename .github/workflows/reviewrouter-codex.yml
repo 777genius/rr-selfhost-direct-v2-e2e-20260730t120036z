@@ -1,6 +1,6 @@
 name: ReviewRouter Codex OAuth
 
-run-name: ${{ format('ReviewRouter review PR #{0} at {1}', github.event.pull_request.number, github.event.pull_request.head.sha) }}
+run-name: ${{ format('ReviewRouter review PR {0} at {1}', github.event.pull_request.number, github.event.pull_request.head.sha) }}
 
 on:
   pull_request:
