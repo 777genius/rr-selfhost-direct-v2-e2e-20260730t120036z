@@ -18,7 +18,7 @@ jobs:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.pull_request.draft == false }}
     env:
       REVIEWROUTER_API_URL: "https://rr-provider-e2e.invalid"
-      REVIEWROUTER_ACTION_VERSION: "39a84eaccf2522c3d0ed3a96cb9433d27eab5b75"
+      REVIEWROUTER_ACTION_VERSION: "8fe6b805997ff57c85ed961118ac2d52537518a7"
       REVIEWROUTER_OIDC_AUDIENCE: "reviewrouter"
       REVIEWROUTER_RUNTIME_CONFIG_MODE: "oidc"
       REVIEWROUTER_STATIC_CONFIG_FALLBACK: "true"
@@ -64,7 +64,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: 777genius/review-router
-          ref: 39a84eaccf2522c3d0ed3a96cb9433d27eab5b75
+          ref: 8fe6b805997ff57c85ed961118ac2d52537518a7
           path: .reviewrouter-runtime
           persist-credentials: false
 
