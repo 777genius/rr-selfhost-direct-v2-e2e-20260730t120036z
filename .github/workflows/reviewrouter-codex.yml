@@ -22,9 +22,9 @@ jobs:
       pull-requests: write
       issues: write
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-reusable.yml@39a84eaccf2522c3d0ed3a96cb9433d27eab5b75
+    uses: 777genius/review-router/.github/workflows/reviewrouter-reusable.yml@8fe6b805997ff57c85ed961118ac2d52537518a7
     with:
-      runtime_ref: 39a84eaccf2522c3d0ed3a96cb9433d27eab5b75
+      runtime_ref: 8fe6b805997ff57c85ed961118ac2d52537518a7
       api_url: "https://reviewrouter.site"
       runtime_config_mode: static
       static_runtime_env_json: |-
