@@ -29,14 +29,15 @@ jobs:
       pull-requests: write
       issues: write
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-reusable.yml@280993e55ff36d85350dac4a3674ce46d11cc3e3
+    uses: 777genius/review-router/.github/workflows/reviewrouter-reusable.yml@09a4f99b68714a76c21d7ac2ed9023351b8e9be5
     with:
-      runtime_ref: 280993e55ff36d85350dac4a3674ce46d11cc3e3
+      runtime_ref: 09a4f99b68714a76c21d7ac2ed9023351b8e9be5
       api_url: "https://api.reviewrouter.site"
       runtime_config_mode: oidc
       static_runtime_env_json: |-
         {
           "REVIEWROUTER_CONFIG_SCHEMA_VERSION": "2",
+          "REVIEWROUTER_STATIC_CONFIG_FALLBACK": "false",
           "REVIEW_AUTH_MODE": "mimo-token-plan-api",
           "REVIEW_PROVIDERS": "codex-mimo/mimo-v2.6-pro",
           "REQUIRED_HEALTHY_PROVIDERS": "codex-mimo/mimo-v2.6-pro",
@@ -75,9 +76,9 @@ jobs:
     permissions:
       contents: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-conflict-reusable.yml@280993e55ff36d85350dac4a3674ce46d11cc3e3
+    uses: 777genius/review-router/.github/workflows/reviewrouter-conflict-reusable.yml@09a4f99b68714a76c21d7ac2ed9023351b8e9be5
     with:
-      runtime_ref: 280993e55ff36d85350dac4a3674ce46d11cc3e3
+      runtime_ref: 09a4f99b68714a76c21d7ac2ed9023351b8e9be5
       api_url: "https://api.reviewrouter.site"
       runtime_config_mode: oidc
       pr_number: ${{ github.event.client_payload.pr_number }}

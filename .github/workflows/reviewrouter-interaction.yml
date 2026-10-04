@@ -18,9 +18,9 @@ jobs:
   interaction:
     name: interaction
     if: ${{ github.event_name == 'workflow_dispatch' || ((github.event_name != 'issue_comment' || github.event.issue.pull_request) && github.event.comment.user.type != 'Bot') }}
-    uses: 777genius/review-router/.github/workflows/reviewrouter-interaction-reusable.yml@280993e55ff36d85350dac4a3674ce46d11cc3e3
+    uses: 777genius/review-router/.github/workflows/reviewrouter-interaction-reusable.yml@09a4f99b68714a76c21d7ac2ed9023351b8e9be5
     with:
-      runtime_ref: 280993e55ff36d85350dac4a3674ce46d11cc3e3
+      runtime_ref: 09a4f99b68714a76c21d7ac2ed9023351b8e9be5
       api_url: "https://api.reviewrouter.site"
       runtime_config_mode: oidc
       review_workflow_file: reviewrouter.yml
