@@ -1,45 +1,26 @@
-name: ReviewRouter
-
+name: ReviewRouter Codex
 on:
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-  merge_group:
-  workflow_dispatch:
-    inputs:
-      pr_number:
-        description: "Pull request number for manual reruns"
-        required: false
-        type: string
-
+    types: [opened, synchronize, reopened, ready_for_review, converted_to_draft]
 permissions: {}
-
-
 jobs:
-  review:
-    name: review
+  codex-review:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.user.type != 'Bot' && github.event.pull_request.draft == false }}
+    concurrency:
+      group: reviewrouter-codex-${{ github.repository_id }}
+      cancel-in-progress: false
     permissions:
       contents: read
-      pull-requests: write
-      issues: write
+      pull-requests: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-reusable.yml@8fe6b805997ff57c85ed961118ac2d52537518a7
+    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@cac00289fdadc6e10a59ff4193967324d682a749
     with:
-      runtime_ref: 8fe6b805997ff57c85ed961118ac2d52537518a7
-      api_url: "https://reviewrouter.site"
-      runtime_config_mode: static
-      static_runtime_env_json: |-
-        {
-          "REVIEW_AUTH_MODE": "mimo-token-plan-api",
-          "REVIEW_PROVIDERS": "codex-mimo/mimo-v2.6-pro",
-          "FAIL_ON_NO_HEALTHY_PROVIDERS": "true",
-          "BUDGET_MAX_USD": "1"
-        }
-      pr_number: ${{ github.event.pull_request.number || inputs.pr_number }}
-    secrets:
-      REVIEW_ROUTER_LEDGER_KEY: ${{ secrets.REVIEW_ROUTER_LEDGER_KEY }}
-      CODEX_AUTH_JSON: ${{ secrets.CODEX_AUTH_JSON }}
-      CODEX_CONFIG_TOML: ${{ secrets.CODEX_CONFIG_TOML }}
-      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-      MIMO_TOKEN_PLAN_API_KEY: ${{ secrets.MIMO_TOKEN_PLAN_API_KEY }}
+      runtime_ref: "cac00289fdadc6e10a59ff4193967324d682a749"
+      api_url: "https://interracial-approx-invoice-establishing.trycloudflare.com"
+      pr_number: ${{ format('{0}', github.event.pull_request.number) }}
+      review_head_sha: ${{ github.event.pull_request.head.sha }}
+      provider_instance_id: "codex-rotating:1317220367"
+      runtime_config_mode: oidc
+      codex_session_mode: account-gateway
+      workflow_schema_version: 2
+      review_timeout_minutes: 60
