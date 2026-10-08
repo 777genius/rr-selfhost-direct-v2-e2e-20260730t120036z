@@ -13,9 +13,9 @@ jobs:
       contents: read
       pull-requests: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@ea5d861e504a860c6772637e9117ebfe3850768b
+    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@b15c1f095b281da14e321b476a4843ca768a61b3
     with:
-      runtime_ref: "ea5d861e504a860c6772637e9117ebfe3850768b"
+      runtime_ref: "b15c1f095b281da14e321b476a4843ca768a61b3"
       api_url: "https://interracial-approx-invoice-establishing.trycloudflare.com"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
