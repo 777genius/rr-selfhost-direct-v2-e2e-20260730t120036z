@@ -11,3 +11,6 @@ Prior attempt 38053626875/1 and its unknown effect remain retained.
 
 Native safe HTTP400 projection for reviewed commit ba34af229a755fee45dccc6ae0750a3c566996ee.
 Prior attempt 38055165336/1 and its unknown effect remain retained.
+
+Native MiMo wire default-tier compatibility canary for reviewed commit 5889325703cff4c242f866b877869f6528773185.
+Prior attempt 38059026806/1 and its unknown effect remain retained.
