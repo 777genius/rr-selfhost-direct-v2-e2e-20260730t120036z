@@ -19,3 +19,6 @@ Long OIDC continuation uses unchanged producer 1f716776ea5fa4f8b27d106a6145c016c
 Prior attempt 38082164486/1 and its pending history remain retained without replay.
 
 Intentional new long acceptance with native9cbbd14f closed SSE read diagnostic and reviewed Gateway4e99d817. No timeout change; previous380858 remains frozen.
+
+Intentional long OIDC acceptance after API lease-renewal report ceiling fix 2986b337c0faee9eeb3832020e307f8c3db80385.
+Previous attempt 38090224318/1 and its unknown effects remain retained without replay.
