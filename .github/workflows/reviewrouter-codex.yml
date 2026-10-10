@@ -13,10 +13,10 @@ jobs:
       contents: read
       pull-requests: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@f3ea01724063452dcbb1dc8150414688727defa8
+    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@53bdf0f7cf26c97cf3ca83d1bc66289edbb9cbf6
     with:
-      runtime_ref: "f3ea01724063452dcbb1dc8150414688727defa8"
-      api_url: "https://wing-might-critics-robots.trycloudflare.com"
+      runtime_ref: "53bdf0f7cf26c97cf3ca83d1bc66289edbb9cbf6"
+      api_url: "https://wheels-accommodations-cnet-recipe.trycloudflare.com"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
       provider_instance_id: "codex-rotating:1317220367"
