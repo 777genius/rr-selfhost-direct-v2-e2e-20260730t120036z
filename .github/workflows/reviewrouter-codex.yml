@@ -13,9 +13,9 @@ jobs:
       contents: read
       pull-requests: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@6dc07f621da3b52bf6bf847a6f1415e0862af4df
+    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@ee1061b108d067842e72adba1e4d55e333669231
     with:
-      runtime_ref: "6dc07f621da3b52bf6bf847a6f1415e0862af4df"
+      runtime_ref: "ee1061b108d067842e72adba1e4d55e333669231"
       api_url: "https://tokyo-sciences-locking-epson.trycloudflare.com"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
