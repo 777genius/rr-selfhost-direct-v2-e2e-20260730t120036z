@@ -16,11 +16,11 @@ jobs:
     uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@49f94299d97b46909ca733303c77c2bc675d455f
     with:
       runtime_ref: "49f94299d97b46909ca733303c77c2bc675d455f"
-      api_url: "https://interracial-approx-invoice-establishing.trycloudflare.com"
+      api_url: "https://understand-imperial-illustrated-howto.trycloudflare.com"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
       provider_instance_id: "codex-rotating:1317220367"
       runtime_config_mode: oidc
       codex_session_mode: account-gateway
       workflow_schema_version: 2
-      review_timeout_minutes: 60
+      review_timeout_minutes: 15
