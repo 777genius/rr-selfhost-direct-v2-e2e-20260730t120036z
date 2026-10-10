@@ -13,9 +13,9 @@ jobs:
       contents: read
       pull-requests: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@7471f41d1e94b255704b02636893404a2be3244c
+    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@6dc07f621da3b52bf6bf847a6f1415e0862af4df
     with:
-      runtime_ref: "7471f41d1e94b255704b02636893404a2be3244c"
+      runtime_ref: "6dc07f621da3b52bf6bf847a6f1415e0862af4df"
       api_url: "https://tokyo-sciences-locking-epson.trycloudflare.com"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
@@ -23,4 +23,4 @@ jobs:
       runtime_config_mode: oidc
       codex_session_mode: account-gateway
       workflow_schema_version: 2
-      review_timeout_minutes: 15
+      review_timeout_minutes: 20
