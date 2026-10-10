@@ -14,3 +14,6 @@ Prior attempt 38055165336/1 and its unknown effect remain retained.
 
 Native MiMo wire default-tier compatibility canary for reviewed commit 5889325703cff4c242f866b877869f6528773185.
 Prior attempt 38059026806/1 and its unknown effect remain retained.
+API lease ownership deadline clamp for reviewed commit c2650d56c1f621fb9c7ebec9cbed192cf4ca8bf1.
+Long OIDC continuation uses unchanged producer 1f716776ea5fa4f8b27d106a6145c016c7554e9c and owner native79345.
+Prior attempt 38082164486/1 and its pending history remain retained without replay.
