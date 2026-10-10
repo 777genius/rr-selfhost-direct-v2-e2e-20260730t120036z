@@ -13,10 +13,10 @@ jobs:
       contents: read
       pull-requests: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@53bdf0f7cf26c97cf3ca83d1bc66289edbb9cbf6
+    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@7471f41d1e94b255704b02636893404a2be3244c
     with:
-      runtime_ref: "53bdf0f7cf26c97cf3ca83d1bc66289edbb9cbf6"
-      api_url: "https://fax-game-limited-name.trycloudflare.com"
+      runtime_ref: "7471f41d1e94b255704b02636893404a2be3244c"
+      api_url: "https://fixes-helpful-guitars-cent.trycloudflare.com"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
       provider_instance_id: "codex-rotating:1317220367"
