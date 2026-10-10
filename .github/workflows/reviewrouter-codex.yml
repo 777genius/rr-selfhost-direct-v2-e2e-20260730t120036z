@@ -13,14 +13,14 @@ jobs:
       contents: read
       pull-requests: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@1f716776ea5fa4f8b27d106a6145c016c7554e9c
+    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@2515a08bd761cc61e7f2aa354326d26530f10a57
     with:
-      runtime_ref: "1f716776ea5fa4f8b27d106a6145c016c7554e9c"
-      api_url: "https://cluster-protocols-generic-behalf.trycloudflare.com"
+      runtime_ref: "2515a08bd761cc61e7f2aa354326d26530f10a57"
+      api_url: "https://routines-science-dylan-opposed.trycloudflare.com"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
       provider_instance_id: "codex-rotating:1317220367"
       runtime_config_mode: oidc
       codex_session_mode: account-gateway
       workflow_schema_version: 2
-      review_timeout_minutes: 20
+      review_timeout_minutes: 25
