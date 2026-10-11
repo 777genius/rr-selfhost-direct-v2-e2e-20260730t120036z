@@ -13,10 +13,10 @@ jobs:
       contents: read
       pull-requests: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@daabf92413aa0667053f169cac320279f77b9e74
+    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@4cb00b4598974bc8fb5feafc1b1699ca76ca32af
     with:
-      runtime_ref: "daabf92413aa0667053f169cac320279f77b9e74"
-      api_url: "https://cleaning-chassis-porcelain-vocabulary.trycloudflare.com"
+      runtime_ref: "4cb00b4598974bc8fb5feafc1b1699ca76ca32af"
+      api_url: "https://rachel-acute-personal-prev.trycloudflare.com"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
       provider_instance_id: "codex-rotating:1317220367"
