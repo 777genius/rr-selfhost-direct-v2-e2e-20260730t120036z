@@ -30,3 +30,7 @@ The preceding current canary completed eight admitted provider requests and the 
 ## Funded nano model canary
 
 The isolated OpenRouter test now uses openai/gpt-5.4-nano with the normal 32-request budget, unchanged byte/token caps and a 15-minute caller. This new revision exercises context tools, a nonempty strict final, same-head App publication and normal closure; prior failed or unknown executions remain retained.
+
+## Action 158 closed transport diagnostics
+
+This fresh nano revision uses published Action 158 with closed transport stage/status diagnostics and the normally renewed current family. The prior 38124288644 attempt remains retained; it is not replayed. The model, request/byte/token caps, concurrency and normal 15-minute caller remain unchanged. This revision verifies actual context tools, a nonempty strict final, same-head App publication and normal closure.
