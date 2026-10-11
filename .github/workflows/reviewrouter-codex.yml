@@ -16,7 +16,7 @@ jobs:
     uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@daabf92413aa0667053f169cac320279f77b9e74
     with:
       runtime_ref: "daabf92413aa0667053f169cac320279f77b9e74"
-      api_url: "https://endless-scenario-mae-telecommunications.trycloudflare.com"
+      api_url: "https://cleaning-chassis-porcelain-vocabulary.trycloudflare.com"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
       provider_instance_id: "codex-rotating:1317220367"

@@ -26,3 +26,7 @@ Previous attempt 38090224318/1 and its unknown effects remain retained without r
 ## OpenRouter request-budget remediation
 
 The preceding current canary completed eight admitted provider requests and the ninth was denied before dispatch with the persisted limit code (8/8). The isolated TEST profile and run-control allowance now admit at most 32 requests; concurrency remains one, request and output limits remain 1 MiB, the token ceiling remains 32768 per request, and the normal 15-minute authorization and caller budget are unchanged. This new head validates tools, a strict nonempty accepted final review, and same-head App publication after that configuration change.
+
+## Funded nano model canary
+
+The isolated OpenRouter test now uses openai/gpt-5.4-nano with the normal 32-request budget, unchanged byte/token caps and a 15-minute caller. This new revision exercises context tools, a nonempty strict final, same-head App publication and normal closure; prior failed or unknown executions remain retained.
