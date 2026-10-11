@@ -22,3 +22,7 @@ Intentional new long acceptance with native9cbbd14f closed SSE read diagnostic a
 
 Intentional long OIDC acceptance after API lease-renewal report ceiling fix 2986b337c0faee9eeb3832020e307f8c3db80385.
 Previous attempt 38090224318/1 and its unknown effects remain retained without replay.
+
+## OpenRouter request-budget remediation
+
+The preceding current canary completed eight admitted provider requests and the ninth was denied before dispatch with the persisted limit code (8/8). The isolated TEST profile and run-control allowance now admit at most 32 requests; concurrency remains one, request and output limits remain 1 MiB, the token ceiling remains 32768 per request, and the normal 15-minute authorization and caller budget are unchanged. This new head validates tools, a strict nonempty accepted final review, and same-head App publication after that configuration change.
