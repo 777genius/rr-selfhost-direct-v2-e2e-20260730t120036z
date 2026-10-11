@@ -23,4 +23,4 @@ jobs:
       runtime_config_mode: oidc
       codex_session_mode: account-gateway
       workflow_schema_version: 2
-      review_timeout_minutes: 20
+      review_timeout_minutes: 15
