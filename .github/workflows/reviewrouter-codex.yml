@@ -16,7 +16,7 @@ jobs:
     uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@4cb00b4598974bc8fb5feafc1b1699ca76ca32af
     with:
       runtime_ref: "4cb00b4598974bc8fb5feafc1b1699ca76ca32af"
-      api_url: "https://rachel-acute-personal-prev.trycloudflare.com"
+      api_url: "https://men-symptoms-vast-reducing.trycloudflare.com"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
       provider_instance_id: "codex-rotating:1317220367"
