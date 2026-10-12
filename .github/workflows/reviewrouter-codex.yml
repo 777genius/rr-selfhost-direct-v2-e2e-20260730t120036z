@@ -13,14 +13,14 @@ jobs:
       contents: read
       pull-requests: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@4cb00b4598974bc8fb5feafc1b1699ca76ca32af
+    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@4960e908eea749f625ba93d18455b0dc093280df
     with:
-      runtime_ref: "4cb00b4598974bc8fb5feafc1b1699ca76ca32af"
-      api_url: "https://shepherd-order-asia-honor.trycloudflare.com"
+      runtime_ref: "4960e908eea749f625ba93d18455b0dc093280df"
+      api_url: "https://api.reviewrouter.site"
       pr_number: ${{ format('{0}', github.event.pull_request.number) }}
       review_head_sha: ${{ github.event.pull_request.head.sha }}
       provider_instance_id: "codex-rotating:1317220367"
       runtime_config_mode: oidc
       codex_session_mode: account-gateway
       workflow_schema_version: 2
-      review_timeout_minutes: 15
+      review_timeout_minutes: 60
