@@ -13,3 +13,7 @@ Fresh ordinary App review after additive immutable Action161 producer registrati
 ## Production161 activated repository V2
 
 Fresh ordinary App review after the stored legacy drain completed and repository V2 authority activated. Inspect the existing cart change with repository tools and return the normal nonempty final review for this exact PR head.
+
+## Production admission128 canary admission128-20261013-63e37
+
+Fresh normal App review after the bounded account row-lock ACL repair. Preserve previous failed review evidence; this marker requests one new current-head review through the installed Action161 workflow.
