@@ -17,3 +17,7 @@ Fresh ordinary App review after the stored legacy drain completed and repository
 ## Production admission128 canary admission128-20261013-63e37
 
 Fresh normal App review after the bounded account row-lock ACL repair. Preserve previous failed review evidence; this marker requests one new current-head review through the installed Action161 workflow.
+
+## Production MiMo high reasoning canary mimo-high-20261013
+
+Fresh normal App review with the saved MiMo reasoning effort set to supported high. Inspect the existing cart change with repository tools and return the normal nonempty final review for this exact PR head.
