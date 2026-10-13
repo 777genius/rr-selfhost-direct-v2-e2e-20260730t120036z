@@ -25,3 +25,7 @@ Fresh normal App review with the saved MiMo reasoning effort set to supported hi
 ## Production163 normal Account Gateway review
 
 One fresh ordinary GitHub App review after verified Action163 and coherent SaaS163 deployment. Inspect the existing cart change with repository tools and return the normal nonempty final review for this exact PR head. Previous failed attempts remain retained.
+
+## Production163 aligned authorization deadline
+
+One fresh ordinary App review after the supported API authorization maximum was aligned with the existing 15-minute Gateway grant. Inspect the existing cart change with repository tools and return the normal nonempty final review for this exact PR head. Preserve the earlier failed snapshot and partial-summary evidence.
