@@ -11,3 +11,7 @@ Exercise the ordinary App-dispatched review after the active lease and runtime-b
 ## Relay one-hour normal review check
 
 Use the ordinary App path with unchanged MiMo/Gateway settings after Root's API relay alignment.
+
+## Production 168 diagnostic review
+
+Normal MiMo review through the production Account Gateway; inspect complete review and scoped cleanup.
