@@ -26,9 +26,9 @@ jobs:
       contents: read
       pull-requests: read
       id-token: write
-    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@909ff7df05da201ad7d50168ddb408c24326ecd2
+    uses: 777genius/review-router/.github/workflows/reviewrouter-t0-reusable.yml@ce8106e02c475e31b93b29e0a55151e2af803a8f
     with:
-      runtime_ref: "909ff7df05da201ad7d50168ddb408c24326ecd2"
+      runtime_ref: "ce8106e02c475e31b93b29e0a55151e2af803a8f"
       api_url: "https://api.reviewrouter.site"
       pr_number: ${{ inputs.pr_number }}
       review_head_sha: ${{ inputs.review_head_sha }}
