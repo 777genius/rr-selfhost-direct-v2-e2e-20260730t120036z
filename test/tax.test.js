@@ -9,3 +9,7 @@ test('calculates a percentage tax amount from the subtotal', () => {
 test('keeps a zero tax rate at zero', () => {
   assert.equal(calculateTax(100, 0), 0);
 });
+
+test('keeps tax on a zero subtotal at zero', () => {
+  assert.equal(calculateTax(0, 15), 0);
+});
