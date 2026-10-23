@@ -13,3 +13,7 @@ test('keeps a zero tax rate at zero', () => {
 test('keeps tax on a zero subtotal at zero', () => {
   assert.equal(calculateTax(0, 15), 0);
 });
+
+test('calculates a negative tax amount for a credit subtotal', () => {
+  assert.equal(calculateTax(-100, 15), -15);
+});
