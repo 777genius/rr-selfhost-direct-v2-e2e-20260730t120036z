@@ -17,3 +17,8 @@ test('keeps tax on a zero subtotal at zero', () => {
 test('calculates a negative tax amount for a credit subtotal', () => {
   assert.equal(calculateTax(-100, 15), -15);
 });
+
+test('rounds fractional-cent tax amounts to cents for charges and credits', () => {
+  assert.equal(calculateTax(29.99, 15), 4.5);
+  assert.equal(calculateTax(-29.99, 15), -4.5);
+});
