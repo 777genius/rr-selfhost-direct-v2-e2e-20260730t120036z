@@ -3,5 +3,5 @@
  * discountPercent uses percentage units: 20 means 20%, with inputs validated upstream.
  */
 export function calculateInvoiceDiscountCents(subtotalCents, discountPercent) {
-  return Math.round(subtotalCents * discountPercent);
+  return Math.round(subtotalCents * discountPercent / 100);
 }
